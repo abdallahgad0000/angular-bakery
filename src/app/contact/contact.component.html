@@ -1,0 +1,90 @@
+<header id="contactHeader">
+  <div class="headeroverlay">
+    <div class="weight-area"></div>
+
+    <div
+      class="d-flex justify-content-center align-items-center contact-hight text-light text-center"
+    >
+      <div class="contactHeaderContent">
+        <h1>Contact</h1>
+        <p><a href="#">home</a> <span>/</span> contact</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ------------------------------------------------------------ -->
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-8">
+        <div class="contact-form">
+          <h2>Contact Form</h2>
+          <form [formGroup]='contactForm'(ngSubmit)='submitForm(contactForm)'>
+            <div class="d-flex">
+              <input
+                type="text"
+                placeholder="Name"
+                class="form-control name-input"
+                required formControlName='name'/>
+              <input
+                type="email"
+                placeholder="Email"
+                class="form-control email-input"
+                required  formControlName='email'/>
+            </div>
+            <input
+              type="text"
+              placeholder="Subject"
+              class="form-control subject-input"
+              required  formControlName='subject'/>
+            <textarea
+              placeholder="Message"
+              class="form-control message-area"
+              required  formControlName='message'></textarea>
+            <button type="submit" value="Send" class="btn send-button" >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-4">
+        <div class="Contact-Information icons-list">
+          <h2>Contact Information</h2>
+          <p>
+            I am text block. Click edit button to change this text. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+            nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <p>Our contact details:</p>
+          <ul class="pt-0">
+            <li class="mt-0">
+              <span
+                ><i
+                  class="fa fas fas fa-map-marked bg-color-accent fa-fw"
+                ></i></span
+              >Manchester St 123-78B, Random 713, UK
+            </li>
+            <li>
+              <span><i class="fa fa-phone bg-color-accent fa-fw"></i></span
+              ><a href="tel:+46 123 456 789">+46 123 456 789</a>
+            </li>
+            <li>
+              <span><i class="fa fa-headphones bg-color-accent fa-fw"></i></span
+              ><a href="tel:+37 431 456 789">+37 431 456 789</a>
+            </li>
+            <li>
+              <span
+                ><i
+                  class="fa fas fas fa-envelope-open-text bg-color-accent fa-fw"
+                ></i
+              ></span>
+              <a href="mailto:hello@sitename.com">hello@sitename.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

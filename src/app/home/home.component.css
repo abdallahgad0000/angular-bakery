@@ -1,0 +1,210 @@
+#siteHeader {
+  height: 96vh;
+  background-image: url(../../assets/images/drew-coffman-1872.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+#siteHeader h1 {
+  font-size: 76px;
+}
+
+.headeroverlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.335);
+}
+
+.headerContent {
+  width: 50%;
+}
+
+.btn {
+  padding: 15px 28px;
+}
+
+.headerContent a {
+  display: block;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+  width: 32px;
+  height: 50px;
+  border-radius: 24px;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+
+.dot {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 6px;
+  height: 6px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  -webkit-animation-name: jumpingdot;
+          animation-name: jumpingdot;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes jumpingdot {
+  0% {
+    opacity: 1;
+    bottom: 98px;
+  }
+  50% {
+    opacity: 0;
+    bottom: 88px;
+  }
+  100% {
+  }
+}
+
+@keyframes jumpingdot {
+  0% {
+    opacity: 1;
+    bottom: 98px;
+  }
+  50% {
+    opacity: 0;
+    bottom: 88px;
+  }
+  100% {
+  }
+}
+
+@media screen and (max-width: 991px) {
+  p {
+    font-size: 15px !important;
+  }
+  h1 {
+    font-size: 42px !important;
+  }
+  .headerContent {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: 14px;
+    padding: 10px 17px;
+  }
+}
+
+/* --------------------------end---------------------------------- */
+/* ------------------------ who we are --------------------------- */
+h2 {
+  font-size: 32px;
+  color: rgba(8, 5, 5, 0.842);
+  line-height: 1.38em;
+}
+
+.icons-list ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.icons-list li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.icons-list span {
+  margin-right: 10px;
+}
+
+.whoContent i {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.whoContent {
+  padding: 88px 40px;
+  color: #595959c9;
+}
+
+/* ---------------------------- end -------------------------------- */
+/* -------------------------- our location ------------------------- */
+#ourLocation {
+  background-color: #f8f8f8;
+}
+
+.row {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.col-md-6 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.ourLocation-img {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.ourLocation-content {
+  padding-top: 88px;
+  padding-bottom: 88px;
+  padding-right: 40px;
+}
+
+/* ------------------------------ end ------------------------------ */
+/* -------------------------- ourBaking ---------------------------- */
+.ourBaking-img {
+  margin-bottom: 25px;
+}
+
+.ourBaking-h3 h3 {
+  font-size: 22px;
+  color: rgba(8, 5, 5, 0.842);
+  line-height: 1.38em;
+}
+
+.ourBaking-p p {
+  margin-bottom: 10px;
+}
+
+#ourBaking {
+  padding-top: 70px;
+  padding-bottom: 2px;
+}
+
+/* ------------------------------ end ------------------------------ */
+/* ----------------------------- contact --------------------------- */
+#Contact {
+  background-color: #f8f8f8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.Contact-Information i {
+  padding: 8px;
+  border: 1px solid  #aaa;
+  color: #fff;
+  background: #aaa;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  font-size: 18px;
+}
+
+/* ----------------------------- end ------------------------------- */
+/*# sourceMappingURL=home.component.css.map */

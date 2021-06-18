@@ -1,0 +1,140 @@
+$maindark: #94723c;
+$mainbrouwn:#8e7754;
+$inputscolor:#e6e6e6;
+$placeholder:#adadad;
+
+#contactHeader {
+  background-image: url(../../assets/images/drew-coffman-1872.jpg);
+  background-position: center center;
+  background-size: cover;
+  
+  .headeroverlay{
+      background-color: #00000054;
+  }
+  .contact-hight {
+    height: 37vh;
+    flex-wrap: wrap;
+  }
+
+  .weight-area {
+    height: 90px;
+    //background-color: rgba(255, 255, 255, 0.411);
+  }
+}
+
+.contactHeaderContent {
+  h1 {
+    font-size: 56px;
+  }
+  span {
+      padding-right: 7px;
+      padding-left: 10px;
+  }
+  a{
+      color: aliceblue;
+      text-decoration: none;
+      &:hover{
+          color: $maindark;
+
+      }
+  }
+}
+
+
+#contact{
+    .container{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .contact-form{
+        padding-top: 20px;
+    }
+    h2{
+        color: #303030;
+        line-height: 1.38em;
+        -webkit-font-smoothing: antialiased;
+        font-size: 28px;
+    }
+    .contact-form{
+        padding: 20px;
+    }
+
+    input,textarea{
+        border-radius: 1px;
+        border: solid .3px $inputscolor;
+        padding: 12px;
+        height: 50px;
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+        &::placeholder{
+            color: $placeholder;
+        }
+        &:focus{
+            border: solid .3px $maindark;
+            text-shadow: none;
+            box-shadow: none;
+
+        }
+    }
+    .name-input{
+        margin-right: 12px;
+    }
+    .email-input{
+        margin-left: 12px;
+    }
+    .message-area{
+        height: 200px;
+        max-height: 200px;
+        min-height: 200px;
+    }
+    button{
+        padding: 11px 20px;
+        background-color: $mainbrouwn;
+        color: #fff;
+        &:hover{
+            background-color:#403d38 ;
+        }
+    }
+    .Contact-Information{
+        padding: 20px;
+        a{
+            color: #686868;
+        }
+        i{
+            padding: 8px;
+            color: #fff;
+            background: $mainbrouwn;
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            font-size: 18px;
+        }
+        span{
+            margin-right: 10px;
+            // border:1px solid rgba(0,0,0,.15);
+            // border-radius:50%;
+            // padding: 11px 6px 7px 6px;
+        
+        }
+        ul{
+            list-style-type: none;
+            padding: 0px;
+            padding-top: 20px;
+        }
+        li{
+            margin-top: 15px;
+            margin-bottom:15px;
+        }
+    }
+
+}
+
+@media screen and (max-width:992px){
+    
+    .Contact-Information{
+        padding-top: 40px !important;
+    }
+}
+// @media screen and (max-width:992px){
+// }
+

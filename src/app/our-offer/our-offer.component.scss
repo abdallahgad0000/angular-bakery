@@ -1,0 +1,64 @@
+$maindark: #94723c;
+$inputscolor:#e6e6e6;
+$placeholder:#adadad;
+
+#Our-OfferHeader {
+  background-image: url(../../assets/images/drew-coffman-1872.jpg);
+  background-position: center center;
+  background-size: cover;
+
+  .headeroverlay {
+    background-color: #00000054;
+  }
+  .Our-Offer-hight {
+    height: 37vh;
+    flex-wrap: wrap;
+  }
+
+  .weight-area {
+    height: 90px;
+    //background-color: rgba(255, 255, 255, 0.411);
+  }
+  .Our-OfferHeaderContent {
+    h1 {
+      font-size: 56px;
+    }
+    span {
+      padding-right: 7px;
+      padding-left: 10px;
+    }
+    a {
+      color: aliceblue;
+      text-decoration: none;
+      &:hover {
+        color: $maindark;
+      }
+    }
+  }
+}
+
+#our-offers{
+    .item{
+        padding: 15px 5px;
+        .item-title{
+            display: flex;
+            justify-content: space-between;
+            border-bottom:solid 0.3px $inputscolor;
+
+            h5{
+                margin-bottom: 15px !important;
+                font-size: 18px;
+                color: #303030;
+            }
+            span{
+                font-size: 18px;
+            }
+        }
+        .item-description{
+            p{
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}

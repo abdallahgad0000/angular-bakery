@@ -1,0 +1,101 @@
+$maindark: #94723c;
+$mainbrouwn: #8e7754;
+$inputscolor: #e6e6e6;
+$placeholder: #adadad;
+$headerColor: #f8f8f8;
+
+#galleryHeader {
+  background-image: url(../../assets/images/drew-coffman-1872.jpg);
+  background-position: center center;
+  background-size: cover;
+
+  .headeroverlay {
+    background-color: #00000054;
+  }
+  .gallery-hight {
+    height: 25vh;
+    flex-wrap: wrap;
+  }
+
+  .weight-area {
+    height: 90px;
+    //background-color: rgba(255, 255, 255, 0.411);
+  }
+  .galleryHeaderContent {
+    h1 {
+      font-size: 36px;
+    }
+    a {
+      color: aliceblue;
+      text-decoration: none;
+      &:hover {
+        color: $maindark;
+      }
+    }
+  }
+}
+
+#blog {
+  // .articles{
+  //   float: left;
+  // }
+  overflow: auto;
+  .articles-colum {
+    width: 50%;
+    padding: 15px;
+    // float:left;
+    // display: inline-block;
+    overflow: auto;
+  }
+  .article {
+    border: 0.3px solid $inputscolor;
+    cursor: pointer;
+
+    .article-info {
+      padding: 20px;
+      h4 {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.835);
+        transition: all 0.15s;
+        &:hover {
+          color: rgba(255, 133, 33, 0.815);
+        }
+      }
+      .created-at-p {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 1.3em;
+        color: #aaa;
+      }
+      .article-desc-p {
+        color: #5b5b5b;
+      }
+
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #5b5b5b;
+        transition: all 0.5s;
+        &:hover {
+          color: rgba(0, 0, 0, 0.828);
+          .fa-arrow-right {
+            padding-left: 7px;
+          }
+        }
+      }
+      // .read-more{
+      //   &:hover{
+      //     padding-right: 5px;
+      //   }
+      // }
+      i {
+        transition: all 0.15s;
+        padding-left: 2px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+// .test{
+//   float:inline-end;
+// }
